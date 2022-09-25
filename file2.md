@@ -1,6 +1,6 @@
 # File 2
 
-Welcome to the second page! note, the main webpage is on 
+Welcome to the second page! note, the main webpage is on (wasn't sure which you wanted me to uplaod to gradescope)
   
   [main site](https://dimapdemler.github.io/cse15l-lab-reports)
 
