@@ -1,8 +1,8 @@
 # File 2
 
-Welcome to the second page! note, the lab-report-1-week-0.md webpage is on 
+Welcome to the second page! note, the main webpage is on 
   
-  [link](https://dimapdemler.github.io/cse15l-lab-reports/lab-report-1-week-0.html)
+  [main site](https://dimapdemler.github.io/cse15l-lab-reports)
 
 *This is italic*
 
