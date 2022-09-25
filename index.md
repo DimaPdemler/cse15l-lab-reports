@@ -1,4 +1,5 @@
-wassup, world!
+# Dmitri Demler CSE 15L Webpage
 
->Yesterday is history, tomorrow is a mystery, but today is a gift. That’s why it is called the present
-From Master Oogway, Kung Fu Panda
+[Webpage with Markdown Syntax](https://dimapdemler.github.io/cse15l-lab-reports/file2.html)
+
+[Lab Report 1](https://dimapdemler.github.io/cse15l-lab-reports/lab-report-1-week-0.html)
