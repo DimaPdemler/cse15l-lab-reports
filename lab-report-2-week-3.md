@@ -5,6 +5,60 @@ A16992026
 CSE 15L
 # Lab Report 1
 
+Here is the code for the search engine method:
+
+````
+ArrayList<String> items2 = new ArrayList<String>();
+
+    // The one bit of state on the server: a number that will be manipulated by
+    // various requests.
+    int num = 0;
+    boolean fix1=true;
+    public String handleRequest(URI url) {
+        ArrayList<String> queryArray = new ArrayList<String>();
+       
+        if (url.getPath().contains("/add")) {
+            String[] parameters = url.getQuery().split("=");
+            if (parameters[0].equals("s")) {
+                System.out.println(parameters[1]+ " -parameters");
+
+                items2.add(parameters[1]);
+
+                for(int i = 0; i < items2.size(); i++) {   
+                    // System.out.print(items.get(i));
+                } 
+
+                
+                // num += Integer.parseInt(parameters[1]);
+                return String.format("Added keyword: "+ parameters[1]);
+            }
+            
+        }
+        else if (url.getPath().contains("/search")) {
+            String[] parameters = url.getQuery().split("=");
+            if (parameters[0].equals("s")) {
+                for(int i = 0; i < items2.size(); i++) {   
+                    if(items2.get(i).contains(parameters[1])){
+                        if(fix1==true){
+                            queryArray.add(items2.get(i));
+                            fix1=false;
+                        }
+                        else{
+                            fix1=true;
+                        }
+                        
+                    }
+                }
+                return String.format("results: "+ queryArray);
+
+            }
+            
+        }
+        return "404 Not Found!";
+````
+*Note: I use the fix boolean variable because for some reason each method ran twice. I checked my own code and found no error. I believe that something is wrong with the source code. The fix1 variable helps negate this issue.*
+
+Here are some screenshots of me implementing this code:
 
 ![Image](https://dimapdemler.github.io/cse15l-lab-reports/images/cse15L_lab2_pic1.jpg)
 
