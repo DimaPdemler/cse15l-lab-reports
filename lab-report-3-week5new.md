@@ -15,6 +15,7 @@ less -p[pattern] <file>
 
 This command opens the file as before but highlights the pattern you typed in the command. This is helpful if you are looking for a spciefic word in a document. The patterns can be various useful keywords that can be adapted to your specific needs. 
 
+**Example 1:**
 
 ````less -pcell biomed/rr166.txt````
 
